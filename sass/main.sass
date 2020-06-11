@@ -17,6 +17,7 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 	color: $text
+	background: #121212
 	input, textarea
 		border: #666 1px solid
 		outline: none
@@ -38,6 +39,160 @@ body
 b, strong
 	font-weight: bold
 
+.btn
+  background: linear-gradient(270deg, #E25F23 0%, #E22E23 100%);
+  box-shadow: 0px 4px 16px rgba(226, 95, 35, 0.4);
+  height: 80px
+  font-size: 18px
+  line-height: 30px
+  letter-spacing: 0.2em
+  color: #FFFFFF
+  border-radius: 40px
+
+.wrap
+	max-width: 1618px
+	margin: 0 auto
+	width: 90%
+
+header
+  padding-top: 62px
+  height: 1036px
+  background: url('../img/header_desc.svg') right -100px no-repeat
+  .wrap_row
+    display: flex
+  .sign_in
+    margin-left: auto
+    margin-right: 0
+nav
+  margin-left: 11.9283%
+  ul
+    list-style: none
+    display: flex
+    padding-left: 0
+    li + li
+      margin-left: 47px
+    li
+      &.active
+        a
+          color: rgb(226,95,35)
+          border-bottom: 1px solid rgb(226,95,35)
+    a
+      font-family: 'Roboto'
+      color: #fff
+      border-bottom: none
+      &:hover
+        color: rgb(226,95,35)
+        text-decoration: none
+        border-bottom: 1px solid rgb(226,95,35)
+  
+.sign_in
+  a
+    width: 120px
+    height: 38px
+    border: 2px solid #FFFFFF
+    border-radius: 19px;
+    color: #fff
+    font-size: 14px
+    line-height: 36px
+    font-weight: bold
+    display: block
+    padding-left: 29px
+    position: relative
+    &::after
+      content: ""
+      width: 38px
+      height: 38px
+      border-radius: 50%
+      border: 2px solid #FFFFFF
+      background: url('../img/icon_login.svg') center no-repeat
+      display: block
+      position: absolute
+      right: -2px
+      top: -2px
+
+.header_man
+  position: absolute
+  top: 0px
+  left: 42%
+
+.header_content
+  margin-top: 64px
+  .titleh1
+    font-family: BebasNeue
+    font-style: normal
+    font-weight: bold
+    font-size: 288px
+    line-height: 250px
+  small
+    font-size: 18px
+    line-height: 30px
+    letter-spacing: 0.15em
+    color: #E5E5E5
+    max-width: 447px
+    display: block
+    margin-top: 55px
+    position: relative
+    &::after
+      content: ""
+      width: 188px
+      height: 2px
+      background: #E25F23
+      box-shadow: 0px 0px 5px #E25F23
+      position: absolute
+      right: 10px
+      bottom: 12px
 
 
+  .btn
+    margin-top: 68px
+    display: inline-block
+    width: 348px
+    text-align: center
+    line-height: 80px
+
+  
+.advantages
+  display: flex
+  .advantages_items
+    counter-reset: item;
+    padding-top: 94px
+    margin-left: 49px
+    width: 100%
+    height: 598px
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+  .advantages_item
+    max-width: 515px
+    position: relative
+    &:nth-child(1)
+      max-width: 410px
+      p
+        padding-right: 40px
+    &::before
+      counter-increment: item;
+      content: "0" counter(item)
+      position: absolute
+      top: -30px
+      left: 0
+      z-index: -1
+      font-weight: bold
+      font-size: 72px
+      line-height: 69px
+      opacity: 0.15
+    .title
+      color: #E25F23
+      font-size: 24px
+      font-weight: bold
+      margin-bottom: 23px
+    p
+      font-size: 16px
+      line-height: 30px
+      letter-spacing: 0.15em
+      color: #FFFFFF
+
+    &:nth-child(3)
+      margin-top: 40px
+  
+  
 @import "media" // Always at the end
