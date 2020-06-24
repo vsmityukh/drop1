@@ -5,12 +5,33 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
-
+  .header_content .titleh1
+    font-size: 230px
+    line-height: 1.05
+  .advantages 
+    flex-direction: column
+    .advantages_img
+      width: 100%
+      text-align: center
+    .advantages_items
+      width: 100%
+      // height: auto
 // ≥992px
 +media-breakpoint-down(md)
 
 // ≥768px
 +media-breakpoint-down(sm)
+  .block_titl
+    margin-bottom: 37px
+    text-align: center
+    small
+      font-size: 14px
+      margin-bottom: 18px
+      &::before
+        content: none
+    p
+      font-size: 24px;
+      line-height: 1.4;
 
 // ≥576px
 +media-breakpoint-down(xs)

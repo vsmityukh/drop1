@@ -40,7 +40,7 @@ $(function() {
 		]
 	})
 
- 
+  
 	$('.cases').scrollbar();
 	$('audio').initAudioPlayer();
 }); 
