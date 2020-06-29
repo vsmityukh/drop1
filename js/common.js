@@ -9,7 +9,7 @@ $(function() {
 		$('.tab_contents .active').removeClass('active');
 		$(href).addClass('active');
 	})
-
+ 
  
 	$('.top_slider').slick({
 		infinite: false,
