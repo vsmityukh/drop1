@@ -43,4 +43,9 @@ $(function() {
   
 	$('.cases').scrollbar();
 	$('audio').initAudioPlayer();
+
+	$('.author_cont__more').on('click', function(){
+		console.log(1);
+		$(this).closest('.about_item ').toggleClass('open')
+	})
 }); 

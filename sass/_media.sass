@@ -3,6 +3,216 @@
 
 /*==========  Desktop First  ==========*/
 
+// ≥1440px
+@media (max-width: 1440px)
+  header
+    background: url(../img/header_desc.svg) 195% -170px no-repeat
+    height: 100VH
+    .wrap
+      position: relative
+  .advantages
+    margin-top: 0
+  .step 
+    .step_title
+      font-size: 18px
+      line-height: 1.4
+    .step_text
+      font-size: 15px
+      line-height: 1.4
+      height: 95px
+    .step_count
+      margin-bottom: 20px
+  .advant_block 
+    .advant_item
+      width: 47%
+  .advantages
+    .advantages_items
+      padding-top: 50px
+      padding-left: 45px
+    .advantages_item
+      max-width: 430px
+      .title
+        max-width: 90%
+  .header_man
+    left: 46%
+    max-width: 42%;
+    top: initial
+    bottom: 0
+    img
+      max-width: 100%
+  .header_content .titleh1
+    font-size: 210px
+    line-height: 1
+    letter-spacing: 5.1px;
+  .header_content small
+    margin-top: 35px
+    font-size: 15px
+    max-width: 380px
+    &::after
+      width: 166px
+  .header_content .btn
+    margin-top: 35px
+    width: 343px
+    height: 68px
+    line-height: 68px
+    font-size: 15px
+
+  .header_content
+    margin-top: 4vw
+
+  .advantages
+    height: 525px
+  .advantages .advantages_img
+    width: 36%
+    img
+      height: 100%
+  .advantages .advantages_items
+    width: 64%
+  .advantages .advantages_item p
+    font-size: 15px
+    line-height: 26px
+  .advantages .advantages_item .title
+    font-size: 20px
+    margin-bottom: 11px
+  .advantages .advantages_item::before
+    font-size: 62px
+  .advantages .advantages_item:nth-child(1)
+    max-width: 378px
+  .advantages .advantages_item:nth-child(1) p
+    padding-right: 91px
+  .advantages .advantages_item
+    max-width: 334px
+  .advantages .advantages_item:nth-child(3)
+    margin-top: 20px
+
+  .works_drop
+    margin-top: 0
+  .works_drop::before
+    width: 36%
+
+  .big_info
+    height: 622px
+  .big_info .big_info__data
+    width: 36%
+  .big_info__img
+    width: 64%
+  .big_info .big_info__item+.big_info__item
+    margin-top: 54px
+  .big_info .big_info__item span
+    font-size: 90px
+    line-height: 60px
+  .big_info .big_info__item small
+    font-size: 15px
+
+
+  section.main+section
+    margin-top: 80px
+  .block_titl
+    margin-bottom: 42px
+
+
+  .cases
+    margin-left: 5.5%
+  .cases .cases_item
+    max-width: 457px
+  .cases .cases_item img
+    height: auto
+  .cases .cases_item .cases_item__content
+    padding: 39px 40px 49px
+  .cases .cases_item .cases_item__content p
+    font-size: 22px
+  .cases .cases_item .cases_item__content small
+    font-size: 15px
+    margin-top: 14px
+    letter-spacing: .14em
+
+  .about_r .block_titl p
+    letter-spacing: 0.16em
+  .cases .about_item
+    max-width: 578px
+  .cases .author .author_cont
+    padding: 54px 24px 0 34px
+  .cases .author .author_cont .author_cont__name
+    font-size: 22px
+  .cases .author .author_cont p
+    font-size: 13px
+    line-height: 2
+  .author .ppq-audio-player .player-bar
+    width: 175px
+  .author .ppq-audio-player .player-text
+    font-size: 11px
+
+
+
+  .advant_block .advant_item__img
+    margin-right: 36px
+  .advant_block .advant_item
+    padding-bottom: 26px
+    padding-right: 34px
+  .advant_block .advant_item p
+    font-size: 15px
+
+  .btn2
+    height: 60px
+    line-height: 60px
+    font-size: 18px
+    width: 299px
+
+  footer .f_copy
+    font-size: 12px
+    letter-spacing: 0.15em
+    color: #E5E5E5
+  footer .f_soc
+    padding: 6px 18px
+    display: flex
+    a
+      display: block
+      width: 25px
+      height: 25px
+      img
+        max-width: 100%
+        height: 100%
+        display: block
+  footer .f_soc a+a
+    margin-left: 16px
+
+  .h_soc
+    position: absolute
+    width: 47px
+    padding: 24px 0 26px 
+    a
+      width: 27px
+      height: 27px
+      & + a
+        margin-top: 14px
+
+@media (max-width: 1368px)
+  header
+    background: url(../img/header_desc.svg) 250% -295px no-repeat
+
+  .header_man
+    max-width: 36%;
+    left: 47%;
+    bottom: -4%
+  .header_content .titleh1
+    line-height: 0.9
+    font-size: 190px
+  .header_content
+    margin-top: 3vw
+
+  .header_content small,
+  .header_content .btn
+    margin-top: 20px
+
+
+  
+// ≥1280px
+@media (max-width: 1280px)
+  header
+    background: url(../img/header_desc.svg) 700% -40px no-repeat
+  .header_man
+    left: 51%
+
 // ≥1200px
 +media-breakpoint-down(lg)
   .step 
@@ -29,6 +239,7 @@
     line-height: 1.05
   .advantages 
     flex-direction: column
+    height: auto
     .advantages_img
       width: 100%
       text-align: center
@@ -99,12 +310,15 @@
       .title
         line-height: 1.3      
       &:nth-child(1)
-        max-width: 430px
+        max-width: 334px
         p
           padding-right: 0
       & + .advantages_item
         margin-top: 40px
-
+  .h_soc
+    display: none
+  .advantages .advantages_img img
+    height: auto
 
   .steps
     flex-direction: column
@@ -200,8 +414,60 @@
       margin-right: auto
   .cases .author .author_cont 
     padding-top: 35px
-    p
-      font-size: 16px
+
+@media (max-width: 840px)
+  header .header_content .btn
+    position: absolute
+    bottom: 35px
+    width: 220px
+    height: 51px
+    line-height: 51px
+    font-size: 12px
+    left: 50%
+    transform: translateX(-50%)
+  .header_content .titleh1
+    font-size: 14vw
+  header
+    max-height: 800px
+    .wrap
+      width: 100%
+      padding: 0 5%
+    .header_content
+      text-align: center
+      margin-top: 25px
+      width: 90%
+      margin-left: auto
+      margin-right: auto
+      position: relative
+      padding-bottom: 350px
+      height: calc(100vh - 125px)
+      max-height: 680px
+      small
+        display: none
+    .header_man
+      overflow: hidden
+      position: absolute
+      right: initial
+      left: 0
+      top: 260px
+      width: 100%
+      max-width: 100%
+      height: 359px
+      text-align: center
+      &::after
+        content: ""
+        background: linear-gradient(180deg, #E25E23 0%, #E23223 100%);
+        border-radius: 50px 0px 0px 50px;
+        width: 100%
+        display: block
+        position: absolute
+        z-index: -1
+        height: 274px
+        top: 37px
+        left: 135px
+      img
+        width: 264px
+
 // ≥768px
 +media-breakpoint-down(sm)
   .step .step_count
@@ -253,12 +519,19 @@
     margin-left: 0
     .about_item
       margin-bottom: 20px 
-      height: 360px
+      height: 398px
       margin-top: 36px
       width: 236px
       border-radius: 5px
+      
+      &.open
+        height: auto
+        .author_cont
+          p
+            max-height: 100%
     .author
       padding: 0 18px 18px
+      
       .ppq-audio-player
         height: 42px
         display: flex
@@ -286,6 +559,16 @@
         padding-top: 18px
         padding-left: 0
         padding-right: 0
+        .author_cont__more
+          display: block
+          color: #E25F23
+          font-size: 12px
+          letter-spacing: 0.15em;
+          text-decoration: underline
+          margin-bottom: 18px
+          cursor: pointer
+          &:hover
+            text-decoration: none
         .author_cont__name
           font-size: 18px
           line-height: 30px
@@ -293,7 +576,9 @@
         p
           font-size: 12px
           line-height: 20px 
-          height: 136px
+          height: auto
+          max-height: 136px
+          transition: max-height 0.15s ease-out
           overflow: hidden
           position: relative
           &::after
@@ -313,19 +598,38 @@
         margin-right: auto
         border-radius: 50%
         margin-bottom: 0
+        display: flex
+        .author_info__img
+          width: 142px
+          height: 130px
+          overflow: hidden
+          margin: 0
+          border-radius: 10px 0px 0px 0px
+          img
+            max-width: 100%
         .author_info__soc
-          margin-top: 20px
+          margin-top: 0
           background: #494A49
           border-radius: 31px
           height: 31px
           width: 102px
+          margin-left: auto
+          margin-right: auto
+          flex-direction: column
+          height: 130px
+          width: 39px
+          justify-content: center
+          align-items: center
           a
-            width: 18px
-            height: 17px
+            width: 23px
+            height: 22px
+            display: flex
             & + a
-              margin-left: 9px
+              margin-top: 15px
+              margin-left: 0
             img
               max-width: 100%
+              height: 100%
         & > img
           display: block
           margin-left: auto
@@ -358,6 +662,21 @@
       font-size: 24px;
       line-height: 1.4;
 
+  .small_card 
+    .small_card__price small
+      font-size: 14px
+    .small_card__title
+      font-size: 22px
+      line-height: 1.4
+      height: auto
+    .small_card__img
+      height: 225px
+  
+  .advant_block
+    margin-bottom: -130px
+
+
+  
 // ≥576px
 +media-breakpoint-down(xs)
   header
@@ -414,11 +733,14 @@
       position: absolute
       right: initial
       left: 0
-      top: 240px
+      top: 55vw
       width: 100%
       max-width: 100%
-      height: 359px
+      height: 82vw
       text-align: center
+      img
+        max-width: 100%
+        max-height: 100%
       &::after
         content: ""
         background: linear-gradient(180deg, #E25E23 0%, #E23223 100%);
@@ -494,7 +816,7 @@
   .slick-arrow.slick-next, .slick-arrow.slick-prev
     width: 18px
     height: 32px
-    background-size: cover
+    background-size: contain
   
   .top_offers 
     .tab_links
@@ -524,6 +846,7 @@
     .small_card__img
       height: 215px
     .small_card__title
+      height: auto
       margin-bottom: 18px
       font-size: 18px
       line-height: 1.4
@@ -532,14 +855,10 @@
   .works_drop
     padding: 60px 0 30px
 
-  .block_titl
-    margin-bottom: 46px
   .cases 
     .cases_item
       width: 241px
       margin-bottom: 20px
-      img
-        height: 215px
       .cases_item__content
         padding: 21px 16px 20px 21px
         p
@@ -579,6 +898,10 @@
       margin-right: 13px
       width: 30px
       height: 30px
+
+@media (max-width: 360px)
+  header .header_man::after
+    height: 220px 
 
 /*==========  Mobile First  ==========*/
 

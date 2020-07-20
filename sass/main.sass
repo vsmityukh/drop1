@@ -129,6 +129,8 @@ header
   padding-top: 62px
   height: 1036px
   background: url('../img/header_desc.svg') right -100px no-repeat
+  .wrap
+    position: relative
   .wrap_row
     display: flex
     position: relative
@@ -142,6 +144,7 @@ nav
     list-style: none
     display: flex
     padding-left: 0
+    margin-bottom: 0
     li + li
       margin-left: 47px
     li
@@ -151,6 +154,7 @@ nav
           border-bottom: 1px solid rgb(226,95,35)
     a
       font-family: 'Roboto'
+      font-size: 18px
       color: #fff
       border-bottom: none
       &:hover
@@ -185,8 +189,11 @@ nav
 
 .header_man
   position: absolute
-  top: 0px
-  left: 42%
+  top: -45px;
+  left: 44%;
+  max-width: 710px;
+  img
+    max-width: 100%
 
 .header_content
   margin-top: 64px
@@ -223,6 +230,29 @@ nav
     text-align: center
     line-height: 80px
 
+.h_soc
+  position: absolute
+  right: 0
+  top: 50%
+  transform: translateY(-50%)
+  display: flex
+  align-items: center
+  flex-direction: column
+  background: rgba(255,255,255,.2)
+  border-radius: 111px
+  width: 56px
+  height: auto
+  padding: 24px 0 32px 
+  a
+    display: block
+    width: 32px
+    height: 32px
+    img
+      max-width: 100%
+      height: 100%
+      display: block
+    & + a
+      margin-top: 16px
   
 .advantages
   margin-top: -65px
@@ -351,8 +381,13 @@ nav
   .small_card__img
     height: 290px
     max-width: 290px
+    display: flex
+    justify-content: center
+    margin-left: auto
+    margin-right: auto
     img
       max-width: 100%
+      max-height: 100%
   .small_card__title
     font-weight: bold
     font-size: 24px
@@ -402,7 +437,7 @@ nav
       background: #E25F23
       margin-right: 20px
   p
-    font-family: Gotham Pro;
+    font-family: GothamPro
     font-weight: bold;
     font-size: 48px;
     line-height: 60px;
@@ -433,12 +468,12 @@ nav
       font-weight: bold
       font-size: 96px
       line-height: 1
-      color: black
+      color: transparent
       -webkit-text-stroke: 2px #e25f23
       position: relative
       &:after
         content: ""
-        height: 78px
+        height:  110px
         width: 100%
         background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, #1D1D1E 100%,);
         z-index: 1
@@ -495,6 +530,8 @@ nav
   .author
     display: flex
     .author_info
+      width: 214px
+      // height: 529px
       .author_info__soc
         margin-top: 47px
         display: flex
@@ -506,8 +543,11 @@ nav
           &:hover
             opacity: 0.6
     .author_cont
+      // width: calc(100% - 214px)
       padding: 54px 74px 0 34px
       white-space: normal
+      .author_cont__more
+        display: none
       .author_cont__name
         font-weight: bold
         font-size: 24px
@@ -803,34 +843,5 @@ footer
     top: 0
   &::before
     bottom: 0
-
-@media (max-width: 1440px)
-  .step 
-    .step_title
-      font-size: 18px
-      line-height: 1.4
-    .step_text
-      font-size: 16px
-      line-height: 1.4
-      height: 95px
-    .step_count
-      margin-bottom: 20px
-  .advant_block 
-    .advant_item
-      width: 47%
-  .advantages
-    .advantages_items
-      padding-top: 50px
-      padding-left: 25px
-    .advantages_item
-      max-width: 430px
-      .title
-        max-width: 90%
-  .header_man
-    left: 49%;
-    max-width: 48%;
-    img
-      max-width: 100%
-  .header_content .titleh1
-    font-size: 258px
+  
 @import "media" // Always at the end
